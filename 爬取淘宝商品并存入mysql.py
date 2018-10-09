@@ -47,7 +47,7 @@ def get_products():
         except IndexError:
             print("error")
 def save_to_mysql(price,title,shop):
-    db = pymysql.connect(host="localhost",user="root",password="992198",port=3306,db="crawlspider")
+    db = pymysql.connect(host="localhost",user="root",password="xxxxxx",port=3306,db="crawlspider")
     cursor = db.cursor()
     #mysql的插入语句
     sql = "INSERT INTO test1(price,title,shop) VALUES(%s,%s,%s)"
